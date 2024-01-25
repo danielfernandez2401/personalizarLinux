@@ -1,0 +1,9 @@
+La polybar es una ventana o marco para ver el espacio de trabajo el target la ip etc...
+Nos ponemos como root e instalamos los siguientes paquetes:
+"apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libuv1-dev libnl-genl-3-dev"
+Nos convertimos en el usuario no privilegiado y meternos a descargar y clonarnos el siguiente recurso 
+"git clone --recursive https://github.com/polybar/polybar "
+Nos vamos al directorio polybar creamos el directorio build y hacemos un "cmake .." y haremos un "make -j$(nproc)" 
+Hacemos el "sudo make install" y estara instalado una vez acabe
+Recomendacion ahora hacer una snapshot
+ 

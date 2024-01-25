@@ -1,0 +1,39 @@
+¿Que es bspwn?
+Es un gestor de ventanas tipo mosaico que organiza las ventanas en un árbol binario completo.
+Pasos para instalar:
+(nos ponemos como root para que nos resulte mas sencillo)
+introduciremos el siguiente comando para instalar los paquetes necesarios para luego proceder con la instalación:
+"apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev"
+y ahora posteriormente continuaremos con la instalacion del bspwn y el sxhkd (es la forma de poder a nivel de teclado manejar comodamente los atajos que definamos gracias a un archivito de configuracion que es el sxhkdrc)
+Pero antes de proceder deberiamos de hacer un apt update para actualizar paquetes y en mi caso al tener un parrot hare un parrot-upgrade si teneis otro sistema podeis hacer el apt upgrade.
+Lo siguiente seria ponernos como usuario no privilegiado e ir a la carpeta y clonar los siguientes comandos:
+"git clone https://github.com/baskerville/bspwm.git"  (para el bspwm)
+"git clone https://github.com/baskerville/sxhkd.git"  (para el sxhkd)
+luego los siguientes comandos:
+"cd bspwm"
+"make"
+"sudo make install"
+Haremos lo mismo con el sxhkd
+
+
+Bien ahora ya tenemos instalado los programas, pasamos a configurarlos
+Crearemos dos carpetas en config:
+"mkdir ~/.config/{bspwm,sxhkd}"
+luego "cd Descargas/bspwm/examples"
+y encontraaremos los archivos bspwmrc y el sxhkdrc que son para las configuraciones
+nos copiamos ambos a los directorios creados anteriormente
+"cp bspwmrc ~/.config/bspwm/"
+"cp sxhkdrc ~/.config/sxhkd/"
+Ahora instalaremos nuestra kitty ques es una terminal.
+ahora nos vamos al archivito del sxhkd 
+y donde terminal emulator cambiaremos la terminal que esta puesta para abrir por defecto por la kitty
+Bien em ese archivito podemos modificar los atajosa nuestro antojo y gusto como cada uno prefiera
+Si que destacaria que se pueden usar scripts externos para otras funciones
+
+
+
+
+
+
+
+
